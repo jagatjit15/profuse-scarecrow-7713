@@ -1,11 +1,114 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link/>
     <title>Document</title>
+    <style>
+ body{
+    font-family: Robot,sans-serif;
+    background-color: rgb(250,250,250);
+}
+
+#sernavbar{
+    display: flex;
+    height: 85px;
+    box-shadow:0 1px 1px 0 rgb(0 0 0 / 5%), 
+    0 1px 2px 0 rgb(0 0 0 / 10%), 
+    0 2px 20px 0 rgb(0 0 0 / 20%);
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#serlogo1{
+    
+    width: 20%;
+    
+}
+#serlogo1>img{
+    padding-left: 25px;
+    padding-top: 15px;
+    width:70%;
+margin-bottom: 5px;
+}
+#sermid{
+    display: flex;
+    justify-content: space-evenly ;
+    width: 65%;
+    
+}
+#sermid>div,#serlast>div{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height:24px;
+}
+#serlast{
+    display: flex;
+    justify-content: center;
+    width: 35%;            
+}
+#serlast>img{
+    margin-top: 20px;
+    height: 25px;
+    width: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+/* navbar over */
+
+.sehead1 {
+    text-align: center;
+    height: 50px;
+    background-color: #fec923;
+    border: 1px solid #fec923;            
+}
+
+.sehead2 {
+    text-align: center;
+    height: 250px;
+    border: 1px solid black;
+    background-color: #1c2c56; 
+    color: aliceblue;                     
+}
+
+.sehead2 > h1 {
+    font-weight: 400;
+    line-height: 1px;
+}
+
+    </style>
+ 
 </head>
 <body>
-    <h1>Services</h1>
+    <div id="sernavbar">
+        <div id="serlogo1">
+            <img src="https://static.naukimg.com/s/7/123/i/FF-Logo.8e75327b.png"/>
+        </div>
+        <div id="sermid">
+            <div>RESUME WRITING</div>
+            <div>RECRUITER ATTENTION</div>
+            <div>FIND JOBS</div>
+            <div>MONTHLY SUBSCRIPTION</div>
+            <div>VALUE PACKS</div>
+            <div>CONTACT US</div>
+        </div>
+        <div id="serlast">
+            <img src="https://static.naukimg.com/s/7/123/i/cart.de6f3dff.png" alt=""/>
+            <div><a href="login.html">LOGIN</a></div>  
+            <img src="" alt="">    
+        </div>
+    </div>
+    <div class="sehead1">
+        <p>Kindly log in to check if you are eligible for Exclusive Naukri Discount</p>
+    </div>
+    <div class="sehead2">
+        <h1>Move ahead in career, faster</h1>
+        <p>with our paid services</p>
+    </div>
+   
+    
 </body>
 </html>
