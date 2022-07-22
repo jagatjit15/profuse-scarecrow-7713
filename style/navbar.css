@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* font-family: 'Nunito',
+sans-serif;
+font-family: 'Roboto',
+sans-serif; */
+
+
+
+/*  INSTRUCTIONS */
+/**
+ * use import {} from "module";
+ * navbar css file name :- navbar.css
+ * link css after title tag
+ * create a nav tag and append the imported function to the nav.innerHTML;
+ * dont need to write css file check common id names and class names
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Roboto',
+        sans-serif;
+    background-color: #fff;
+    border-bottom: 0.1px solid #c6c6c6cc;
+}
+
+#_navbar {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 70px;
+}
+
+#nav_logo {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav_logo>img {
+    width: 60%;
+}
+
+#mid_menu {
+    width: 60%;
+    display: flex;
+}
+
+._menu_list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+._menu_list>li {
+    list-style: none;
+    width: 20%;
+    position: relative;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'Roboto',
+        sans-serif;
+    transition: all 0.2s ease-in-out;
+
+}
+
+._menu_list>li>a {
+    color: #666666;
+}
+
+._menu_list>li:hover {
+    background-color: #e2e2e2cc;
+}
+
+._menu_list>li:hover>a {
+    border-bottom: 4px solid #5a99e3;
+    color: #5a99e3;
+}
+
+.sub_menu_list {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    padding: 10px 20px;
+    justify-content: space-between;
+    gap: 20px;
+    min-width: 350px;
+    left: 0%;
+    transform: translateY(65%);
+    background-color: #e2e2e2cc;
+    z-index: 100000;
+
+}
+
+.sub_menu_list p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    margin: 20px 0px;
+}
+
+.sub_menu_list p:hover {
+    color: #5a99e3;
+}
+
+._menu_list>li:hover .sub_menu_list {
+    visibility: visible;
+    transition: all 100ms ease-in-out;
+    transform: translateY(65%);
+
+}
+
+._rf {
+    display: block;
+    margin-top: 20px;
+}
+
+._cf {
+    display: block;
+    margin-top: -10px;
+}
+
+._tf {
+    display: block;
+    margin-top: 12px;
+}
+
+#right_menu {
+    width: 15%;
+}
+
+._rml>li {
+    width: 50%;
+}
+
+._rml>li>img {
+    width: 40%;
+}

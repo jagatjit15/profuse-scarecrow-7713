@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+#sec_container {
+    width: 100%;
+    height: 100vh;
+    margin-top: 4%;
+    position: relative;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+#body_content {
+    width: 37%;
+    margin-left: 20%;
+    height: 450px;
+    background-color: #ffffff;
+    padding: 30px 10px 10px 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#body_content>div {
+    width: 40%;
+    float: right;
+    margin-top: 10%;
+}
+
+#body_content>div>img {
+    width: 100%;
+}
+
+#body_content>h3 {
+    margin: 15px 10px;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: 'Roboto',
+        sans-serif;
+    font-weight: 500;
+}
+
+#body_content>p {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0px;
+    font-family: 'Roboto',
+        sans-serif;
+    font-size: 14px;
+}
+
+#body_content>p>span>img {
+    filter: invert(50%);
+}
+
+svg {
+    fill: green;
+    height: 20px;
+}
+
+#body_content>#reg_btn {
+    width: 45%;
+    height: 35px;
+    border: 1px solid #4a90e2;
+    font-size: 14px;
+    text-transform: capitalize;
+    line-height: 38px;
+    color: #4a90e2;
+    margin-top: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Login form */
+
+#login_form {
+    width: 30%;
+    height: 470px;
+    position: absolute;
+    top: 0;
+    right: 15%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 40px 60px;
+}
+
+#login_form>input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding-left: 8px;
+    outline: none;
+    border: none;
+    border: 0.3px solid #c9c9c9;
+    text-transform: capitalize;
+
+}
+
+#login_form>h4+label+input {
+    margin-bottom: 30px;
+}
+
+#login_form>h4 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+#login_form>label {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+#login_form>#fgt_pas {
+    text-align: right;
+    font-size: 13px;
+    color: #4a90e2;
+    cursor: pointer;
+}
+
+#login_form #login_btn {
+    width: 100%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    height: 40px;
+    background-color: #4a90e2;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+
+#login_form #use_otp {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4a90e2;
+    line-height: 20px;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#google_ {
+    width: 90%;
+    margin: auto;
+    height: 40px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#google_>img {
+    width: 30px;
+}
+#google_ > p{
+    opacity: 0.6;
+}
