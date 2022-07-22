@@ -30,6 +30,8 @@ nav {
     width: 100%;
     font-family: 'Roboto',
         sans-serif;
+    background-color: #fff;
+    border-bottom: 0.1px solid #c6c6c6cc;
 }
 
 #_navbar {
