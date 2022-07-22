@@ -1,4 +1,4 @@
-
+        // CompaniesNames
 let CompaniesNames = [
     {
         img:"https://static.naukimg.com/s/0/0/i/trending-naukri/remote.svg",
@@ -69,6 +69,8 @@ nagaraju(CompaniesNames);
         document.querySelector("#sixth").append(box)
     })
  };
+
+        // exploreCpmpany
  
  let exploreCompany = [
         {
@@ -136,7 +138,9 @@ nagaraju(CompaniesNames);
         document.querySelector("#eight").append(dabba)
     })
  };
+ 
 
+//  featuredCompany
 
  let featuredCompany=[
     {
@@ -208,3 +212,207 @@ nagaraju(CompaniesNames);
  }
 
 
+// discoverCOmpany
+
+let discoverCompany = [
+
+    {
+        title:"Full Stack Developer",
+        para:"25.9K+ Jobs"
+    },
+    {
+        title:"Mobile / App Developer",
+        para:"1.9K+ Jobs"
+    },
+    {
+        title:"Front End Developer",
+        para:"2.5K+ Jobs"
+    },
+    {
+        title:"DevOps Engineer",
+        para:"1.6K+ Jobs"
+    },
+    {
+        title:"Engneering Manager",
+        para:"1.7K+ JObs"
+    },
+    {
+        title:"Techinical Lead",
+        para:"1.46K Jobs"
+    },
+]
+nagaraju3(discoverCompany);
+function nagaraju3(data){
+    data.forEach(function(ele){
+        let dabba = document.createElement("div");
+
+        let title = document.createElement("h2");
+        title.innerText = ele.title;
+
+        let para = document.createElement("p");
+        para.innerText = ele.para;
+
+        dabba.append(title,para);
+        document.querySelector("#discover2").append(dabba);
+    })
+}
+
+
+// sponser
+
+ let sponserCompany = [
+    {
+       img:"https://img.naukimg.com/logo_images/groups/v1/4612691.gif" ,
+       title:"MOURI Tech",
+       rating:"⭐4.0(224 reviews)",
+       p1:"software Product",
+       p2:"Service"
+    },
+    {  
+        img:"https://img.naukimg.com/logo_images/groups/v1/4656921.gif",
+        title:"NICE",
+        rating:"⭐4.0(255 reviews)",
+        p1:"software Product",
+        p2:"Foreign MNC"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/4586691.gif",
+        title:"ICE Mortgage Tech",
+        rating:"⭐4.4(43 reviews)",
+        p1:"IT Services & Consulting",
+        p2:"Software Product"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/233334.gif",
+        title:"Coforage",
+        rating:"⭐3.8(808 reviews)",
+        p1:"Public Service",
+        p2:"Indian MNC"
+
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/373276.gif",
+        title:"Intas",
+        rating:"⭐4.3(47 reviews)",
+        p1:"IT Services & Consulting",
+        p2:"Foreign MNC"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/4837621.gif",
+        title:"QuantumID",
+        rating:"⭐4.6(8 reviews)",
+        p1:"IT Services & Consulting",
+        p2:"Service"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/86854.gif",
+        title:"Sun Life",
+        rating:"⭐4.4(373 reviews)",
+        p1:"Financial Services",
+        p2:"Insurance"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/1413844.gif",
+        title:"NIT",
+        rating:"⭐3.8(26 reviews)",
+        p1:"software Product",
+        p2:"Foreign MNC"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/191386.gif",
+        title:"Infosys BPM",
+        rating:"⭐4.0(5.5K reviews)",
+        p1:"Analytics / KPO / Research",
+        p2:"BPO/KPO"
+    },
+    {
+        img:"https://img.naukimg.com/logo_images/groups/v1/3767692.gif",
+        title:"Sykes",
+        rating:"⭐3.5(529 reviews)",
+        p1:"BPO / Call Centre",
+        p2:"Recruitment ? Staffing"
+    }
+ ]
+
+ nagaraju4(sponserCompany);
+
+ function nagaraju4(data){
+    data.forEach(function(ele){
+        let dabba = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.setAttribute("src",ele.img);
+
+        let okati= document.createElement("h3");
+        okati.innerText = ele.title;
+
+        let rendu = document.createElement("p");
+        rendu.innerText = ele.rating;
+
+        let moodu = document.createElement("h5");
+        moodu.innerText = ele.p1;
+
+        let nalugu = document.createElement("h5");
+        nalugu.innerText = ele.p2;
+
+        dabba.append(image,okati,rendu,moodu,nalugu);
+        document.querySelector("#sponser2").append(dabba)
+    })
+ }
+
+ let interviewQus=[
+     
+        {
+            image:"https://static.naukimg.com/s/0/0/i/ambitionbox-comp/byjus.png",
+            title:"Byjus",
+            list:"816 Interviews"
+        },
+        {
+            image:"https://static.naukimg.com/s/0/0/i/ambitionbox-comp/cognizant.png",
+            title:"Cognizant",
+            list:"16K+ Interviews"
+        },
+        {
+            image:"https://static.naukimg.com/s/0/0/i/ambitionbox-comp/accenture.png",
+            title:'Accenture',
+            list:"2K+ Interviews"
+        },
+        {
+            image:"https://static.naukimg.com/s/0/0/i/ambitionbox-comp/amazon.png",
+            title:"Amazon",
+            list:"1.7K Interviews"
+        },
+        {
+            image:"https://static.naukimg.com/s/0/0/i/ambitionbox-comp/tcs.png",
+            title:"TCS",
+            list:"2.5K Interviews"
+        },
+        {
+            image:"https://static.naukimg.com/s/0/0/i/ambitionbox-comp/flipkart.png",
+            title:"Flipkart",
+            list:"488 Interviews"
+        }
+ ]  
+
+ nagaraju5(interviewQus);
+
+ function nagaraju5(data){
+    data.forEach(function(ele){
+        let dabba = document.createElement("div");
+
+        let image = document.createElement("img");
+        image.setAttribute("src",ele.image);
+
+        let title = document.createElement("h3");
+        title.innerText = ele.title;
+
+        let para = document.createElement("p");
+        para.innerText = ele.list;
+
+        // let dabba1 = document.createElement("div");
+
+        // dabba1.append(title,para);
+        dabba.append(image,title,para);
+        document.querySelector("#interview3").append(dabba);
+    })
+ }
