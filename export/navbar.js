@@ -51,9 +51,9 @@ let funcNavbar = () => {
                         </div>
                     </li>
                     <li id="_services"><a>services</a>
-
                     </li>
-                    <li id="_more"><a>more</a></li>
+                    <li id="_more"><a>more</a>
+                    </li>
                 </ul>
             </div>
             <div id="right_menu">
