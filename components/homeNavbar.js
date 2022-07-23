@@ -11,7 +11,7 @@ export default function homePageNavbar  () {
     
 <div id="three"><a href=""> <b> Login</b></a></div>  
 
-<div id="four"><a href="">Register</a></div>
+<div id="four"><a href="register.html">Register</a></div>
 
 <div id="five">
  <select name="" id="">
