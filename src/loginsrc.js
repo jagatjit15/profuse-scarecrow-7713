@@ -15,27 +15,26 @@ span3.innerHTML = svgis();
 span4.innerHTML = svgis();
 
 let login = document.querySelector("#login_btn");
-login.addEventListener("click", authenticateUser);
+login.addEventListener("click", authenticate);
 
-async function authenticateUser() {
-  let password = document.getElementById("login_pass").value;
-  let username = document.getElementById("login_name").value;
-  let User = {
-    password: password,
-    username: username,
+async function authenticate() {
+  let signin_data = {
+    password: document.getElementById("login_pass").value,
+    username: document.getElementById("login_name").value,
   };
 
-  User = JSON.stringify(User);
-  let response = await fetch("http://masai-api-mocker.herokuapp.com/auth/login",
-    {
-      method: "POST",
-      body: User,
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  );
+  signin_data = JSON.stringify(signin_data);
+  let api_link_ = "https://masai-api-mocker.herokuapp.com/auth/login";
+
+  let response = await fetch(api_link_, {
+    method: "POST",
+    body: signin_data,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
   let data = await response.json();
+  // append(username, data.token)
   console.log(data);
 }
 
