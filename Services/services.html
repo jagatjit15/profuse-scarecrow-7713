@@ -286,6 +286,121 @@ margin-bottom: 5px;
 }
  /* container2 end */
 
+ /* container4 start */
+
+ #sercontacts {
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    margin-top: 35px;  
+    display: flex;
+    justify-content: space-between;
+    
+}
+#sercontacts > .serphone {
+    width: 48%;
+    background-color: #4297e8;
+    color: white;
+    box-sizing: border-box;
+    padding: 100px;
+    box-shadow:0 1px 1px 0 rgb(0 0 0 / 5%), 
+    0 1px 2px 0 rgb(0 0 0 / 10%), 
+    0 2px 20px 0 rgb(0 0 0 / 20%);
+   
+}
+
+#sercontacts > .serinfo {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow:0 1px 1px 0 rgb(0 0 0 / 5%), 
+    0 1px 2px 0 rgb(0 0 0 / 10%), 
+    0 2px 20px 0 rgb(0 0 0 / 20%);
+    padding-bottom: 15px;
+}
+
+.serphone > p {
+    font-size: 14px;
+}
+.serhead {
+    font-size: 13px;
+}
+
+p + input {
+    width: 80%;
+    height: 30px;
+}
+
+#sersub {
+    width: 80%;  
+    margin-top: 30px;  
+    height: 40px;
+    background-color: #4297e8;
+    border-radius: 5px;
+    
+}
+.sercontainer4 {
+    width: 60%;
+    height: 150px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow:0 1px 1px 0 rgb(0 0 0 / 5%), 
+    0 1px 2px 0 rgb(0 0 0 / 10%), 
+    0 2px 20px 0 rgb(0 0 0 / 20%);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.sersample {
+    width: 40%;           
+    display:flex;
+    margin-top: -10px;
+    justify-content: space-between;
+    color: #2f82cf;
+}
+.sersample > p {
+    font-size: 15px;            
+}
+.sercareer{
+    width: 60%;
+    height: 450px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow:0 1px 1px 0 rgb(0 0 0 / 5%), 
+    0 1px 2px 0 rgb(0 0 0 / 10%), 
+    0 2px 20px 0 rgb(0 0 0 / 20%);
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.seradvice{
+    display: flex;
+    gap: 10px;
+}
+.seradvice>div{
+    
+    height: 350px;
+    width: 60%;
+    gap: 10px;
+}
+.seradvice>div>h5{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.seradvice>div>p{
+    font-size: 15px;
+    color: skyblue;
+    padding-left: 10px;
+}
+.seradvice>div>h4{
+    font-size: 15px;
+    color: #2f82cf;
+    text-align: end;
+    padding-right: 20px;
+    padding-top: 300px;
+
+}
+/* container 4 end  */
+
 
     </style>
  
@@ -431,6 +546,67 @@ margin-bottom: 5px;
             </div>
         </div>        
     </div>
+    <div id="sercontacts">
+        <div class="serphone">
+            <h4>Talk to Us</h4>
+            <p>Call us Toll Free: 1800-102-5557</p>
+            <p>(9.00Am to 9.00Pm IST)</p>
+            <p>International Customer Call: +91-120-1421100</p>
+            <p>for bulk queries call: 18001034477</p>
+        </div>
+        <div class="serinfo">
+            <form>
+                <h4>CONTACT US</h4>
+                <p>Our executive will get in touch with you soon</p>
+                <p class="head">Name*</p>
+                <input type="text" placeholder="Type ypur name here" >
+                <p class="head">Email ID*</p>
+                <input type="email" placeholder="Type your email number" >
+                <p class="head">Mobile*</p>
+                <input type="number" placeholder="Type your mobile number" >
+                <p class="head">write your query here*</p>
+                <input type="text" placeholder="e.g. I am interested" >
+                <input type="submit" value="CAll ME BACK" id="sersub">
+            </form>
+        </div>
+    </div>
+    <div class="sercontainer4">
+        <p>See Samples</p>
+        <hr>
+        <p>View select text resume, visual resume and cover letter samples across industries</p>
+        <div class="sersample">
+            <p>text Resume</p>
+            <p>Visual Resume</p>
+            <p>Cover Letter</p>
+        </div>
+    </div>  
+    <div class="sercareer">
+        <p>Career Advice</p>
+        <hr>
+        <div class="seradvice">
+            <div>
+                <h5>Most Viewed Articles</h5>
+                <p>How to Answer “Tell me about yourself” Question!</p>
+                <p>Tips to Make an Impressive CV</p>
+                <p>Does Your Resume Have The Magic Keywords?</p>
+            </div>
+            <div>
+                <h5>Cover Letter Writing</h5>
+                <p>7 Ways to Make your Cover Letter Recruiter Friendly</p>
+                <p>Common Cover letter mistakes to avoid!</p>
+                <h5>Certification</h5>
+                <p>Aptitude Tests! Know your strengths & weaknesses</p>
+                <p>Background Verification-What Employers Will Discover</p>
+            </div>
+            <div>
+                <h5>Appraisals and Promotions</h5>
+                <p>Looking for a Promotion?</p>
+                <p>Dealing With A Bad Appraisal</p>
+            </div>
+            <div>
+                <h4>VIEW ALL</h4>
+            </div>
+        </div>
    
     
 </body>
