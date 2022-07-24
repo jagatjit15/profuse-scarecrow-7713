@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Navbar{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0px 150px 0px 150px;
+        }
+        #heading_box{
+        width:100%;
+        height: 300px;
+        border: 1px solid red;
+        }
+        #heading1{
+            width:100%;
+            border: 1px solid green;
+            display: flex;
+            /* padding: 0px 200px 300px 170px; */
+            padding-left: 200px;
+            /* padding-right: 200px; */
+            margin-right: 200px;
+            justify-content: space-evenly;
+            align-items: center;    
+    }
+    #heading2{
+        width: 100%;
+    height: 200px;
+    border: 1px solid blue;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    }
+    #box_left{
+        width: 60%;
+        height:150px;
+        border: 1px solid teal ;
+    }
+    #box_right{
+        width: 15%;
+        height:150px;
+        border: 1px solid teal ;
+        margin-right: 300px;
+        background-color: rgba(128, 128, 128, 0.338);
+    }
+    #search1{
+        width:350px;
+        height: 40px;
+        margin-left: 200px;
+    }
+    #search2{
+        width:200px;
+        height: 40px;
+        
+    }
+    button{
+        width:150px;
+        height:40px;
+    }
+    #box_right>input{
+        width:100%;
+        height:35px;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-top: 0px;
+        margin-bottom: 3px;
+        text-align: center;
+
+        
+    }
+    #box_right>p{
+        margin: 0%;
+        padding:0%;
+        font-size: smaller;
+        text-align: center;
+    }
+    #box_right>button{
+        width:100%;
+        height:50px;
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+    }
+    #heading3{
+        width:60%;
+        height:50px;
+        margin-left: 200px;
+        border: 1px solid green;
+    }
+    #box_left>p:first-child{
+        margin-left: 400px;
+        font-size: smaller;
+
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div id="Navbar">
+        <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="not">
+        <h3>JOBS</h3>
+        <h3>RECRUITERS</h3>
+        <h3>COMPANIES</h3>
+        <h3>TOOLS</h3>
+        <h3>SERVICES</h3>
+        <h3>MORE</h3>
+        <h3>LOGIN</h3>
+    </div>
+    <div id="heading_box">
+        <div id="heading1">
+            <p>All Jobs</p>
+            <p>IIT/IIM Jobs</p>
+            <p>Govt. Jobs</p>
+            <p>International Jobs</p>
+            <p>Walk in Jobs</p>
+        </div>
+        <div id="heading2">
+            <div id="box_left"><input type="text" id="search1" placeholder="Skills,Designation,Companies">
+                <input type="text" id="search2" placeholder="Location">
+                <button>Search</button>
+                <p>Advanced search</p>
+                <p>Browse Jobs</p>
+                <div id="heading3"></div>
+            </div>
+              
+            <div id="box_right">
+                <input id="email" type="text" placeholder="Enter Email-Id to Register"><br>
+                <input id="password" type="text" placeholder="Create Password">
+                <p id="terms and condition">I agree to all the <a href="https://www.naukri.com/termsconditions">Terms and Conditions</a></p>
+                <button><h1>Register Now</h1></button>
+            </div>
+        </div>
+    </div>
+</body> 
+</html>  
