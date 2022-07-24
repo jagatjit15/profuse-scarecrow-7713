@@ -8,7 +8,7 @@ let funcNavbar = () => {
             </div>
             <div id="mid_menu">
                 <ul class="_menu_list">
-                    <li id="_job"><a>jobs</a>
+                    <li id="_job"> <a href="./Job/browse-jobs.html">jobs</a>
                         <div class="sub_menu_list _jf">
                             <div class="left_sub">
                                 <p>search jobs</p>
@@ -50,9 +50,9 @@ let funcNavbar = () => {
                             <p>naukri labs</p>
                         </div>
                     </li>
-                    <li id="_services"><a>services</a>
+                    <li id="_services"><a href="./Services/services.html">services</a>
                     </li>
-                    <li id="_more"><a>more</a>
+                    <li id="_more"><a href="./HomeNavbar/index.html">more</a>
                     </li>
                 </ul>
             </div>

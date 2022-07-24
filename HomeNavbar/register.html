@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         *{
+        * {
             margin: 0px;
-         padding: 0px;  
-    
+            padding: 0px;
+
         }
-        #regNav{
+
+        #regNav {
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -19,36 +21,43 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             background: white;
         }
-        #regNav a{
+
+        #regNav a {
             text-decoration: none;
         }
-        #regForm{
+
+        #regForm {
             display: flex;
             padding: 50px;
         }
-        #reg1{
-           /* border: 1px solid red; */
-           width: 250px;
-           padding: 50px;
-           margin-top: 250px;
-           margin-left: 150px;
-           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        #reg1 {
+            /* border: 1px solid red; */
+            width: 250px;
+            padding: 50px;
+            margin-top: 250px;
+            margin-left: 150px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-        #imgReg{
+
+        #imgReg {
             margin-top: -100px;
             margin-left: 80px;
         }
-        #reg3 img{
+
+        #reg3 img {
             width: 50px;
             height: 50px;
             /* margin-top: -100px; */
         }
-        #reg3 p{
+
+        #reg3 p {
             margin-left: 50px;
             margin-top: -60px;
-            
+
         }
-        #reg100{
+
+        #reg100 {
             /* border: 1px solid red; */
             margin-left: 600px;
             margin-top: -500px;
@@ -57,155 +66,203 @@
             height: 500px;
             padding: 50px;
         }
-        #reg100 h1{
+
+        #reg100 h1 {
             /* margin-top: 20px; */
             margin-bottom: 10px;
-            width: 700px; 
+            width: 700px;
             text-align: center;
         }
+
         /*  */
-        #form{
+        #form {
             margin-left: 100px;
             /* height: 700px; */
         }
-#btn{
-    height: 45px;
-    width: 500px;
-    background-color: teal;
-    color: white;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.signup-box{
-    width: 348px;
-    height: 550px;
-    margin: auto;
-    background-color: aliceblue;
-    border-radius: 3px;
-}
-h1{
-    text-align: center;
-    margin-left: 15px;
-    /* padding-top: 15px; */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-rendering: optimizeLegibility;
-    padding-bottom: 4px;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 1.2;
-    color: rgb(103, 124, 242);
-}
-form{
-    width: 300px;
-    margin-left: 20px;
-}
-form label{
-    display: flex;
-    margin-top: 20px;
-    font-size: 18px;
-    font-family: Arial,sans-serif;
-}
-form input{
-    width: 500px;
-    height:35px;
-    padding: 3px;
-    border-radius: 10px;       
-    border: 1px solid rgb(9, 97, 250);
-    outline: none;
-    box-sizing: border-box;
-    text-align: center;
-}
-input[type="submit"]{
-    width: 500px;
-    margin-top: 20px;
-    height:35px;
-    font-family: Arial,sans-serif;
-    font-size: 16px;
-    background-color: rgb(96, 154, 241);
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-p{
-    text-align: center;
-    /* margin-left: 10px; */
-    padding-top: 20px;
-    font-size: 16px; 
-}
-p a{
-     text-decoration: none;
-    color: red;
-    cursor: pointer;
-}
 
+        #btn {
+            height: 45px;
+            width: 500px;
+            background-color: teal;
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        .signup-box {
+            width: 348px;
+            height: 550px;
+            margin: auto;
+            background-color: aliceblue;
+            border-radius: 3px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-left: 15px;
+            /* padding-top: 15px; */
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-rendering: optimizeLegibility;
+            padding-bottom: 4px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 1.2;
+            color: rgb(103, 124, 242);
+        }
+
+        form {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        form label {
+            display: flex;
+            margin-top: 20px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        form input {
+            width: 500px;
+            height: 35px;
+            padding: 3px;
+            border-radius: 10px;
+            border: 1px solid rgb(9, 97, 250);
+            outline: none;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            width: 500px;
+            margin-top: 20px;
+            height: 35px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: rgb(96, 154, 241);
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        p {
+            text-align: center;
+            /* margin-left: 10px; */
+            padding-top: 20px;
+            font-size: 16px;
+        }
+
+        p a {
+            text-decoration: none;
+            color: red;
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
     <div>
         <div id="regNav">
             <a href="index.html"><img src="https://static.naukimg.com/s/4/100/i/naukri_Logo.png" alt=""></a>
             <p>Already Registered?<a href="../login.html">Login</a></p>
-         </div>
+        </div>
 
-         <!-- 2nd div -->
-         <div id="regForm">
-         <div id="reg1" >
-            <img src="https://static.naukimg.com/s/7/104/assets/images/green-boy.c8b59289.svg" alt="" id="imgReg">
-            <div id="reg2">
+        <!-- 2nd div -->
+        <div id="regForm">
+            <div id="reg1">
+                <img src="https://static.naukimg.com/s/7/104/assets/images/green-boy.c8b59289.svg" alt="" id="imgReg">
+                <div id="reg2">
                     <div id="reg3">
-                        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711429.jpg" alt="">
+                        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711429.jpg"
+                            alt="">
                         <p>Build your profile and let recruiters find you</p>
                     </div>
                     <div id="reg3">
-                        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711429.jpg" alt="">
+                        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711429.jpg"
+                            alt="">
                         <p>
                             Get job postings delivered right to your email</p>
                     </div>
-                    <div id="reg3"> 
-                        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711429.jpg" alt="">
+                    <div id="reg3">
+                        <img src="https://png.pngtree.com/png-vector/20190228/ourmid/pngtree-check-mark-icon-design-template-vector-isolated-png-image_711429.jpg"
+                            alt="">
                         <p>Find a job and grow your career</p>
                     </div>
+                </div>
             </div>
-         </div>
-        
-        </div>
-   
-    <div id="reg100">
-        <h1>Find a job & grow your career</h1>
-        <form action="" id="form">
-            <label for="">Your Name</label>
-            <input type="text" id="name" placeholder="Enter your Name" required>
-            <label for="">Email</label>
-            <input type="text" id="email" placeholder="Enter your Email" required>
-            <label for="">Create Passowrd</label>
-            <input type="text" id="password" placeholder="Create Passowrd" required>
-            <label for="">Mobile number</label>
-            <input type="text" id="mobile" name="idNumber" pattern="[0-9]{10}" placeholder="Enter 10-Digit Mobile Number" required>
-            <input type="submit" value="Register Now" id="submit">
-        </form>
-</div>
-</div>  
-</body>
-</html>
-<script>
-    function balayya(name,email,password,mobile){
-    this.name=name;
-    this.email=email;
-    this.password=password;
-    this.mobile=mobile;
-}
-let ravan=JSON.parse(localStorage.getItem("userData"))
-let nagaraju=()=>{
-    event.preventDefault();
-    let name=document.querySelector("#name").value;
-    let email=document.querySelector("#email").value;
-    let password=document.querySelector("#password").value;
-    // let repassword=document.querySelector("#repassword").value;
-    let output=new balayya(name,email,password,mobile);
-    localStorage.setItem("userData",JSON.stringify(output));
-    alert("Account Successful Registered!!");
-    window.location.href="signin.html";
 
-}
-document.querySelector("form").addEventListener("submit",nagaraju)
+        </div>
+
+        <div id="reg100">
+            <h1>Find a job & grow your career</h1>
+            <form action="" id="form">
+                <label for="">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your Name" required>
+                <label for="">Email</label>
+                <input type="text" id="email" placeholder="Enter your Email" required>
+                <label for="">Create Passowrd</label>
+                <input type="text" id="password" placeholder="Create Passowrd" required>
+                <label for="">Mobile number</label>
+                <input type="text" id="mobile" name="idNumber" pattern="[0-9]{10}"
+                    placeholder="Enter 10-Digit Mobile Number" required>
+                <input type="submit" value="Register Now" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit", nagaraju)
+    async function nagaraju(event) {
+        event.preventDefault()
+        let user__data = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            password: document.getElementById("password").value,
+            username: document.getElementById("name").value,
+            mobile: document.getElementById("mobile").value,
+            description: "User description",
+
+        }
+
+        user__data = JSON.stringify(user__data);
+        let api_link_ = "https://masai-api-mocker.herokuapp.com/auth/register "
+
+        let response = await fetch(api_link_, {
+            method: 'POST',
+            body: user__data,
+            headers:
+            {
+                'Content-Type': 'application/json'
+            }
+
+        })
+
+        window.location.href = "../login.html"
+        let data = await response.json();
+        console.log(data)
+    }
 </script>
+
+</html>
+<!-- <script>
+    function balayya(name, email, password, mobile) {
+        this.name = name;
+        this.email = email;
+        this.password = password;
+        this.mobile = mobile;
+    }
+    let ravan = JSON.parse(localStorage.getItem("userData"))
+    let nagaraju = () => {
+        event.preventDefault();
+        let name = document.querySelector("#name").value;
+        let email = document.querySelector("#email").value;
+        let password = document.querySelector("#password").value;
+        // let repassword=document.querySelector("#repassword").value;
+        let output = new balayya(name, email, password, mobile);
+        localStorage.setItem("userData", JSON.stringify(output));
+        alert("Account Successful Registered!!");
+        window.location.href = "signin.html";
+
+    }
+   
+</script> -->
