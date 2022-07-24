@@ -36,6 +36,11 @@ async function authenticate() {
   let data = await response.json();
   // append(username, data.token)
   console.log(data);
+
+  let name = document.getElementById("login_name");
+  localStorage.setItem("username", JSON.stringify());
+
+  window.location.href = "./home.html";
 }
 
 // https://masai-api-mocker.herokuapp.com
