@@ -1,26 +1,34 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #Navbar{
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #Navbar {
             display: flex;
             justify-content: space-around;
             align-items: center;
             padding: 0px 150px 0px 150px;
         }
-        #heading_box{
-        width:100%;
-        height: 300px;
-        /* border: 1px solid red; */
-        background-image: url(https://static.naukri.com/s/4/103/i/bgDesktop_v1.jpg);
-        /* background-color: black;
+
+        #heading_box {
+            width: 100%;
+            height: 300px;
+            /* border: 1px solid red; */
+            background-image: url(https://static.naukri.com/s/4/103/i/bgDesktop_v1.jpg);
+            /* background-color: black;
         filter: blur(2px); */
         }
-        #heading1{
-            width:100%;
+
+        #heading1 {
+            width: 100%;
             /* border: 1px solid green; */
             display: flex;
             /* padding: 0px 200px 300px 170px; */
@@ -28,142 +36,174 @@
             /* padding-right: 200px; */
             margin-right: 200px;
             justify-content: space-evenly;
-            align-items: center;  
-            color: white;  
-    }
-    #heading2{
-        width: 100%;
-    height: 200px;
-    /* border: 1px solid blue; */
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    }
-    #box_left{
-        width: 60%;
-        height:150px;
-        /* border: 1px solid teal ; */
-    }
-    #box_right{
-        width: 15%;
-        height:150px;
-        /* border: 1px solid teal ; */
-        margin-right: 300px;
-        background-color: rgba(128, 128, 128, 0.338);
-    }
-    #search1{
-        width:350px;
-        height: 40px;
-        margin-left: 200px;
-    }
-    #search2{
-        width:200px;
-        height: 40px;
-        
-    }
-    button{
-        width:140px;
-        height:40px;
-    }
-    #box_right>input{
-        width:100%;
-        height:35px;
-        /* display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        #heading2 {
+            width: 100%;
+            height: 200px;
+            /* border: 1px solid blue; */
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #box_left {
+            width: 60%;
+            height: 150px;
+            /* border: 1px solid teal ; */
+        }
+
+        #box_right {
+            width: 15%;
+            height: 150px;
+            /* border: 1px solid teal ; */
+            margin-right: 300px;
+            background-color: rgba(128, 128, 128, 0.338);
+        }
+
+        #search1 {
+            width: 350px;
+            height: 40px;
+            margin-left: 200px;
+        }
+
+        #search2 {
+            width: 200px;
+            height: 40px;
+
+        }
+
+        button {
+            width: 140px;
+            height: 40px;
+        }
+
+        #box_right>input {
+            width: 100%;
+            height: 35px;
+            /* display: flex;
         justify-content: center;
         align-items: center; */
-        margin-top: 0px;
-        margin-bottom: 3px;
-        text-align: center;
+            margin-top: 0px;
+            margin-bottom: 3px;
+            text-align: center;
 
-        
-    }
-    #box_right>p{
-        margin: 0%;
-        padding:0%;
-        font-size: smaller;
-        text-align: center;
-    }
-    #box_right>button{
-        width:100%;
-        height:50px;
-        margin-top: 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: orange;
-    }
-    #heading3{
-        width:75%;
-        height:40px;
-        margin-left: 200px;
-        /* border: 1px solid green; */
-        display:flex;
-        justify-content: space-evenly;
-        color: white;
-    }
-    /* #box_left>p:first-child{
+
+        }
+
+        #box_right>p {
+            margin: 0%;
+            padding: 0%;
+            font-size: smaller;
+            text-align: center;
+        }
+
+        #box_right>button {
+            width: 100%;
+            height: 50px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+
+        #heading3 {
+            width: 75%;
+            height: 40px;
+            margin-left: 200px;
+            /* border: 1px solid green; */
+            display: flex;
+            justify-content: space-evenly;
+            color: white;
+        }
+
+        /* #box_left>p:first-child{
         margin-left: 400px;
         font-size: smaller;
 
     } */
-    #text1{
-        margin-top:0%;
-        margin-bottom: 0%;
-        margin-left: 800px;
-        font-size: smaller;
-        color: white;
-    }
-    #text2{
-        margin-top: 0%;  
-        margin-bottom: 0%;
-        margin-left: 200px;
-        font-size: smaller; 
-        color: white; 
-    }
-    #browse{
-        width: 65%;
-        height: 50px;
-        /* border:1px solid blue; */
-        margin-left: 220px;
-        margin-top: 10px;
-        display: flex;
-    }
-    
-    
-    #browse>p{
-        font-size: larger;
-    }
-    #browse>input{
-        margin-left: 550px;
-        width:200px
-    }
-    #footer{
-        width:1000px;
-        height:1500px;
-        /* border:1px solid teal; */
-        margin-left: 200px;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
+        #text1 {
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 800px;
+            font-size: smaller;
+            color: white;
+        }
 
-    }
-    #footer>a{
-        font-size: 12px;
-        margin: 0%;
-    }
+        #text2 {
+            margin-top: 0%;
+            margin-bottom: 0%;
+            margin-left: 200px;
+            font-size: smaller;
+            color: white;
+        }
 
-        
+        #browse {
+            width: 65%;
+            height: 50px;
+            /* border:1px solid blue; */
+            margin-left: 220px;
+            margin-top: 10px;
+            display: flex;
+        }
+
+
+        #browse>p {
+            font-size: larger;
+        }
+
+        #browse>input {
+            margin-left: 550px;
+            width: 200px
+        }
+
+        #footer {
+            width: 1000px;
+            height: 1500px;
+            /* border:1px solid teal; */
+            margin-left: 200px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+        }
+
+        #footer>a {
+            font-size: 12px;
+            margin: 0%;
+        }
     </style>
 </head>
+
 <body>
     <div id="Navbar">
         <img src="https://static.naukri.com/s/4/100/i/naukri_Logo.png" alt="not">
-        <h3>JOBS</h3>
-       <h3>RECRUITERS</h3>
-       <h3>COMPANIES</h3>
-        <h3>TOOLS</h3>
-        <h3>SERVICES/h3>
-        <h3>MORE</h3>
-        <h3>LOGIN</h3>
+
+      
+        <a href="./Job/browse-jobs.html">
+            <h3>JOBS</h3>
+        </a>
+        <a href="">
+            <h3>RECRUITERS</h3>
+        </a>
+        <a href="./company.html">
+            <h3>COMPANIES</h3>
+        </a>
+        <a href="">
+            <h3>TOOLS</h3>
+        </a>
+        <a href="./Services/services.html">
+            <h3>SERVICES</h3>
+        </a>
+        <a href="">
+            <h3>MORE</h3>
+        </a>
+        <a href="./login.html">
+            <h3>LOGIN</h3>
+        </a>
+
     </div>
     <div id="heading_box">
         <div id="heading1">
@@ -187,12 +227,15 @@
                     <p>Jobs by Skill</p>
                 </div>
             </div>
-              
+
             <div id="box_right">
                 <input id="email" type="text" placeholder="Enter Email-Id to Register"><br>
                 <input id="password" type="text" placeholder="Create Password">
-                <p id="terms and condition">I agree to all the <a href="https://www.naukri.com/termsconditions">Terms and Conditions</a></p>
-                <button><h1 id="">Register Now</h1></button>
+                <p id="terms and condition">I agree to all the <a href="https://www.naukri.com/termsconditions">Terms
+                        and Conditions</a></p>
+                <button>
+                    <h1 id="register">Register Now</h1>
+                </button>
             </div>
         </div>
     </div>
@@ -201,88 +244,257 @@
         <input type="text" placeholder="Search by companies">
     </div>
     <div id="footer">
-        <a href="https://www.naukri.com/24-7-ai-jobs-careers-793202"><P>A one Academy & Enterprice Jobs</P></a>
-        <a href="https://www.naukri.com/a-one-salasar-jobs-careers-1130974"><p>A one Salasar Pvt. Ltd. Jobs</p></a>
-        <a href="https://www.naukri.com/a-a-associates-jobs-careers-1132478"><p>A & A Assocites Jobs</p></a>
-        <a href="https://www.naukri.com/a-dot-r-software-pvt-dot-ltd-dot-jobs-careers-752505"><p>A.R software private limited Jobs</p> </a>
-        <a href="https://www.naukri.com/a3-logics-india-pvt-dot-ltd-dot-jobs-careers-622031"><p>A3 Logics India Pvt. Ltd Jobs</p> </a>
-        <a href="https://www.naukri.com/aabsys-it-jobs-careers-503163"><p> Aabsys Information Technology Private Limited Jobs</p></a>
-        <a href="https://www.naukri.com/aachi-group-jobs-careers-1237244"><p>Aachi Masala Foods(P) Ltd. Jobs</p></a>
-        <a href="https://www.naukri.com/aacord-jobs-careers-186057"><p>AAcord Jobs</p></a>
-        <a href="https://www.naukri.com/aakash-institute-jobs-careers-32244"><p>Aakash Educational services Ltd. Jobs</p></a>
-        <a href="https://www.naukri.com/aakash-health-care-jobs-careers-5060632"><p>Aakash Healthcare Private Ltd. Jobs</p></a>
-        <a href="https://www.naukri.com/aakash-universal-jobs-careers-1436870"><p>Aakash universal Private Ltd Jobs</p></a>
-        <a href="https://www.naukri.com/bank-of-america-jobs-careers-161986"><p>BA Continuum Jobs </p></a>
-        <a href="https://www.naukri.com/bbc-heart-care-pruthi-hospital-jobs-careers-316305"><p>BBC Heart Care Jobs</p></a>
-        <a href="https://www.naukri.com/bptp-jobs-careers-1534680"><p>BPTP Jobs</p></a>
-        <a href="https://www.naukri.com/bscpl-infrastructure-jobs-careers-121312"><p>BSCPL Jobs</p></a>
-        <a href="https://www.naukri.com/bt-global-jobs-careers-3832566"><p>BT e-Serve Jobs</p></a>
-        <a href="https://www.naukri.com/byd-electronics-jobs-careers-615309"><p>BYD Electronics Jobs</p></a>
-        <a href="https://www.naukri.com/bahwan-cybertek-jobs-careers-1345582"><p>Bahwan Cyber Tek Jobs</p></a>
-        <a href="https://www.naukri.com/bahwan-engineering-company-bec-jobs-careers-28037"><p>Bahwan Engineering Group Jobs</p></a>
-        <a href="https://www.naukri.com/bajaj-allianz-life-jobs-careers-36244"><p>Bajaj Alliance Gen Insurance Jobs</p></a>
-        <a href="https://www.naukri.com/bajaj-finserv-jobs-careers-783490"><p>Bajaj Auto Jobs</p></a>
-        <a href="https://www.naukri.com/bajaj-electricals-jobs-careers-22840"><p>Bajaj Electrical Jobs</p></a>
-        <a href="https://www.naukri.com/the-bahrain-petroleum-company-b-dot-s-dot-c-closed-jobs-careers-75240"><p>Bapoo Jobs</p></a>
-        <a href="https://www.naukri.com/barclays-shared-services-bss-jobs-careers-230314"><p>Berclays Shared Services Jobs</p></a>
-        <a href="https://www.naukri.com/barclays-shared-services-bss-jobs-careers-230314"><p>Berclays Technology Jobs</p></a>
-        <a href="https://www.naukri.com/bard-jobs-careers-409153"><p>Bard India Healthcare Jobs</p></a>
-        <a href="https://www.naukri.com/bata-india-jobs-careers-87774"><p>Bata Jobs</p></a>
-        <a href="https://www.naukri.com/bausch-lomb-jobs-careers-10715"><p>Bausch And Lamb Jobs</p></a>
-        <a href="https://www.naukri.com/c-s-electric-jobs-careers-9547"><p>C&S Electric Jobs</p> </a>
-        <a href="https://www.naukri.com/aquity-solutions-jobs-careers-3657"><p>CBay Systems Jobs</p></a>
-        <a href="https://www.naukri.com/ceat-jobs-careers-635739"><p>Ceat Tyres Jobs</p></a>
-        <a href="https://www.naukri.com/cgi-jobs-careers-428915"><p>CGI Group Inc. Jobs</p></a>
-        <a href="https://www.naukri.com/ch2m-jobs-careers-683087"><p>CH2M Jobs</p></a>
-        <a href="https://www.naukri.com/dcm-shriram-jobs-careers-126860"><p>DCM Shriram Jobs</p></a>
-        <a href="https://www.naukri.com/pramerica-life-insurance-jobs-careers-2929632"><p>DHFL Pharmica Life Jobs</p></a>
-        <a href="https://www.naukri.com/dhl-jobs-careers-430847"><p>DHL Jobs</p></a>
-        <a href="https://www.naukri.com/dhl-supply-chain-jobs-careers-730386"><p>DHL Lenuir Logistics Jobs</p></a>
-        <a href="https://www.naukri.com/dlf-jobs-careers-15552"><p>DLF Jobs</p></a>
-       <a href="https://www.naukri.com/dharampal-satyapal-group-ds-group-jobs-careers-3286"><p>DS Group Jobs</p></a>
-        <a href="https://www.naukri.com/dabur-jobs-careers-25669"><p>Dabur India Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>Dainik Bhaskar Group Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>Damco Solution Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>EI DoPont Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>EA Games Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>EMC Data Storage Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>EMC software Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>EXFO Electro-Optical Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>EXL Services.com Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>Earth Infrastructure Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>F.L Smidth Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>FAG Bearing India Limited Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>FCG Software Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>FIITJEE Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>FIS Global Business Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>Flame University Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>FNF BPO Services Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>G-cube Webwide JObs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>GHS Corrporate  Services Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>GAP International Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>GE Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>GE Capital BPM Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>GE IIPL Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>GE India Technology Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>H.R Johnson Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>HCL technologies Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>HDB financial Services Ltd Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>HDFC Bank Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>HDFC ERGO Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>IAP Company Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>IBM India Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>ICICI Bank Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>ICICI Lambard Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>ICICI Pradential Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>ICON Clinical  Reserch Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>ICT Consultants Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>JDA software Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>JHM Interstate Hotels Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>JK Technosoft Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>JLL Maghraj Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>JP Morgan Jobs</p></a>
-        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195"><p>Jade a services Jobs</p></a>
+        <a href="https://www.naukri.com/24-7-ai-jobs-careers-793202">
+            <P>A one Academy & Enterprice Jobs</P>
+        </a>
+        <a href="https://www.naukri.com/a-one-salasar-jobs-careers-1130974">
+            <p>A one Salasar Pvt. Ltd. Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/a-a-associates-jobs-careers-1132478">
+            <p>A & A Assocites Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/a-dot-r-software-pvt-dot-ltd-dot-jobs-careers-752505">
+            <p>A.R software private limited Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/a3-logics-india-pvt-dot-ltd-dot-jobs-careers-622031">
+            <p>A3 Logics India Pvt. Ltd Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aabsys-it-jobs-careers-503163">
+            <p> Aabsys Information Technology Private Limited Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aachi-group-jobs-careers-1237244">
+            <p>Aachi Masala Foods(P) Ltd. Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aacord-jobs-careers-186057">
+            <p>AAcord Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aakash-institute-jobs-careers-32244">
+            <p>Aakash Educational services Ltd. Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aakash-health-care-jobs-careers-5060632">
+            <p>Aakash Healthcare Private Ltd. Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aakash-universal-jobs-careers-1436870">
+            <p>Aakash universal Private Ltd Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bank-of-america-jobs-careers-161986">
+            <p>BA Continuum Jobs </p>
+        </a>
+        <a href="https://www.naukri.com/bbc-heart-care-pruthi-hospital-jobs-careers-316305">
+            <p>BBC Heart Care Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bptp-jobs-careers-1534680">
+            <p>BPTP Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bscpl-infrastructure-jobs-careers-121312">
+            <p>BSCPL Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bt-global-jobs-careers-3832566">
+            <p>BT e-Serve Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/byd-electronics-jobs-careers-615309">
+            <p>BYD Electronics Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bahwan-cybertek-jobs-careers-1345582">
+            <p>Bahwan Cyber Tek Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bahwan-engineering-company-bec-jobs-careers-28037">
+            <p>Bahwan Engineering Group Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bajaj-allianz-life-jobs-careers-36244">
+            <p>Bajaj Alliance Gen Insurance Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bajaj-finserv-jobs-careers-783490">
+            <p>Bajaj Auto Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bajaj-electricals-jobs-careers-22840">
+            <p>Bajaj Electrical Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/the-bahrain-petroleum-company-b-dot-s-dot-c-closed-jobs-careers-75240">
+            <p>Bapoo Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/barclays-shared-services-bss-jobs-careers-230314">
+            <p>Berclays Shared Services Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/barclays-shared-services-bss-jobs-careers-230314">
+            <p>Berclays Technology Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bard-jobs-careers-409153">
+            <p>Bard India Healthcare Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bata-india-jobs-careers-87774">
+            <p>Bata Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/bausch-lomb-jobs-careers-10715">
+            <p>Bausch And Lamb Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/c-s-electric-jobs-careers-9547">
+            <p>C&S Electric Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/aquity-solutions-jobs-careers-3657">
+            <p>CBay Systems Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/ceat-jobs-careers-635739">
+            <p>Ceat Tyres Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/cgi-jobs-careers-428915">
+            <p>CGI Group Inc. Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/ch2m-jobs-careers-683087">
+            <p>CH2M Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dcm-shriram-jobs-careers-126860">
+            <p>DCM Shriram Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/pramerica-life-insurance-jobs-careers-2929632">
+            <p>DHFL Pharmica Life Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dhl-jobs-careers-430847">
+            <p>DHL Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dhl-supply-chain-jobs-careers-730386">
+            <p>DHL Lenuir Logistics Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dlf-jobs-careers-15552">
+            <p>DLF Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dharampal-satyapal-group-ds-group-jobs-careers-3286">
+            <p>DS Group Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dabur-jobs-careers-25669">
+            <p>Dabur India Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>Dainik Bhaskar Group Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>Damco Solution Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>EI DoPont Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>EA Games Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>EMC Data Storage Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>EMC software Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>EXFO Electro-Optical Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>EXL Services.com Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>Earth Infrastructure Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>F.L Smidth Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>FAG Bearing India Limited Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>FCG Software Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>FIITJEE Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>FIS Global Business Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>Flame University Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>FNF BPO Services Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>G-cube Webwide JObs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>GHS Corrporate Services Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>GAP International Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>GE Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>GE Capital BPM Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>GE IIPL Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>GE India Technology Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>H.R Johnson Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>HCL technologies Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>HDB financial Services Ltd Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>HDFC Bank Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>HDFC ERGO Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>IAP Company Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>IBM India Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>ICICI Bank Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>ICICI Lambard Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>ICICI Pradential Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>ICON Clinical Reserch Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>ICT Consultants Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>JDA software Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>JHM Interstate Hotels Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>JK Technosoft Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>JLL Maghraj Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>JP Morgan Jobs</p>
+        </a>
+        <a href="https://www.naukri.com/dainik-bhaskar-group-jobs-careers-28195">
+            <p>Jade a services Jobs</p>
+        </a>
     </div>
     <!-- <img src="icons\Video-220721175503.gif" alt="Computer man" style="width: 1500px;height: 156px;"> -->
-</body> 
-</html>    
+</body>
+<script>
+    let reg = document.getElementById("register");
+    reg.addEventListener("click", function () {
+        window.location.href = "../HomeNavbar/register.html"
+    })
+</script>
+
+</html>
